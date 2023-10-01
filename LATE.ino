@@ -305,6 +305,9 @@ void loop() {
 				menu = game_on && ! arduboy.pressed(LEFT_BUTTON) ? MENU_RESUME : MENU_NEW; break;
 			}
 
+			// if(arduboy.pressed(B_BUTTON | LEFT_BUTTON | RIGHT_BUTTON)) {
+			// 	menu = MENU_EXIT; break;
+			// }
 			if(arduboy.justPressed(B_BUTTON)) {
 					menu = MENU_EXIT; break;
 			}
